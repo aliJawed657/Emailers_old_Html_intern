@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Art Day</title>
+   <style type="text/css">
+      body {
+         margin: 0;
+      }
+
+      @media screen and (max-width: 680px) {
+         *[class].wtable {
+            width: 300px !important;
+         }
+
+         *[class].large {
+            display: none !important;
+         }
+
+         *[class].small {
+            display: block !important;
+            width: 300px !important;
+            overflow: visible !important;
+            float: none !important;
+         }
+
+         *[class].hide,
+         .hide {
+            width: 1px !important;
+            max-height: none !important;
+            display: none !important;
+            overflow: visible !important;
+            float: none !important;
+         }
+
+         *[class].btn {
+            font-size: 12px !important;
+         }
+
+         *[class].w100,
+         .w100 {
+            display: block !important;
+            width: 100% !important;
+         }
+
+         *[class].fs16 {
+            font-size: 16px !important;
+            -webkit-text-size-adjust: none !important;
+         }
+
+         *[class].fs20 {
+            font-size: 20px !important;
+            -webkit-text-size-adjust: none !important;
+         }
+
+         [class].fs25 {
+            font-size: 25px !important;
+            -webkit-text-size-adjust: none !important;
+         }
+
+         [class].fs30 {
+            font-size: 30px !important;
+            -webkit-text-size-adjust: none !important;
+         }
+
+         *[class].showimage {
+            background-position: left top !important;
+            background-repeat: no-repeat !important;
+            background-size: 100% auto !important;
+            display: block !important;
+         }
+
+         *[class].f10 {
+            font-size: 10px !important;
+         }
+
+         *[class].f12 {
+            font-size: 12px !important;
+         }
+
+         *[class].f13b {
+            font-size: 13px !important;
+            font-weight: bold;
+         }
+
+         *[class].fs9,
+         .fs9 {
+            font-size: 9px !important;
+            font-weight: bold;
+         }
+
+         *[class].w10,
+         .w10 {
+            width: 10px !important;
+         }
+
+         *[class].w80 {
+            width: 80px !important;
+         }
+
+         *[class].w25,
+         .w25 {
+            width: 25px !important;
+         }
+
+         *[class].w35,
+         .w35 {
+            width: 35px !important;
+         }
+
+         *[class].w61 {
+            width: 61px !important;
+         }
+
+         *[class].w68 {
+            width: 68px !important;
+         }
+
+         *[class].w96 {
+            width: 96px !important;
+         }
+
+         *[class].w171 {
+            width: 171px !important;
+         }
+
+         *[class].ww {
+            width: 100% !important;
+         }
+
+         *[class].w215 {
+            width: 215px !important;
+         }
+
+         *[class].w276 {
+            width: 276px !important;
+         }
+
+         *[class].w277 {
+            width: 277px !important;
+         }
+
+         *[class].w300 {
+            width: 300px !important;
+         }
+
+         *[class].w320 {
+            width: 320px !important;
+         }
+
+         *[class].h2 {
+            height: 2px !important;
+         }
+
+         *[class].h10 {
+            height: 10px !important;
+         }
+
+         *[class].h15,
+         .h15 {
+            height: 15px !important;
+         }
+
+         *[class].h20 {
+            height: 20px !important;
+         }
+
+         *[class].h220 {
+            height: 220px !important;
+         }
+
+         *[class].h25 {
+            height: 25px !important;
+         }
+
+         *[class].h30 {
+            height: 30px !important;
+         }
+
+         *[class].h33,
+         .h33 {
+            height: 33px !important;
+         }
+
+         *[class].h38 {
+            height: 38px !important;
+         }
+
+         *[class].h80 {
+            height: 80px !important;
+         }
+
+         *[class].tar {
+            text-align: right !important;
+         }
+
+         *[class].block-txt-center,
+         .block-txt-center {
+            text-align: center !important;
+            margin: 0 auto !important;
+         }
+
+         *[class].totop {
+            display: table-header-group !important;
+         }
+
+         *[class].tobottom {
+            display: table-footer-group !important;
+         }
+
+         img {
+            max-width: 100%;
+            height: auto;
+            max-height: auto !important;
+         }
+
+         *[class].nav img {}
+
+         *[class].nav td {
+            width: auto !important;
+            text-align: center !important;
+         }
+
+         *[class].nav td[bgcolor="#ababaa"] {
+            width: 1px !important;
+         }
+
+         *[class].heading {
+            font-size: 18px !important;
+         }
+
+         *[class].secondary-message {
+            font-size: 12px !important;
+         }
+
+         *[class].force-left,
+         .force-left {
+            width: 100% !important;
+            float: left !important;
+         }
+
+         *[class].force-right {
+            width: 100% !important;
+            float: right !important;
+         }
+
+         *[class].txt-center,
+         .txt-center {
+            text-align: center;
+         }
+
+         *[class].txt-center td,
+         .txt-center td {
+            text-align: center !important;
+         }
+
+         *[class].txt-center td table,
+         .txt-center td table {
+            text-align: center !important;
+            margin: 0 auto;
+         }
+
+         *[class].auto-height {
+            height: 20px !important;
+         }
+
+         *[class].master-visual {
+            width: 180px !important;
+            height: auto !important;
+         }
+
+         *[class].auto-width {
+            width: auto !important;
+         }
+
+         *[class].centerblocks,
+         .centerblocks {
+            float: none !important;
+            margin: 0 auto !important;
+         }
+
+         *[class].rounded,
+         .rounded {
+            border-radius: 10px;
+            background: none !important;
+         }
+
+         *[class].flexible-content,
+         .flexible-content {
+            width: 100% !important;
+         }
+
+         *[class].block,
+         .block {
+            width: 100% !important;
+            text-align: center !important;
+            display: block !important;
+            margin: 0 auto !important;
+         }
+
+         *[class].blockl,
+         .blockl {
+            width: 100% !important;
+            text-align: left !important;
+            display: block !important;
+            margin: 0 auto !important;
+         }
+
+         *[class].block-txt,
+         .block-txt {
+            text-align: center !important;
+            display: block !important;
+            margin: 0 auto !important;
+         }
+
+         *[class].block-float,
+         .block-float {
+            float: left !important;
+            width: 100% !important;
+            text-align: center !important;
+            display: block !important;
+            margin: 0 auto !important;
+         }
+
+         *[class].content-block {
+            width: 100%;
+            text-align: center !important;
+            display: block !important;
+            margin: 0 auto !important;
+         }
+
+         *[class].height10 {
+            height: 10px !important;
+         }
+
+         *[class].fluid-cell {
+            width: 100%;
+            text-align: center;
+            display: block;
+            vertical-align: middle;
+         }
+
+         *[class].hidden,
+         .hidden {
+            display: none;
+         }
+
+         .wtable {
+            width: 600px;
+         }
+
+         .body {
+            background-color: #232323 !important;
+         }
+
+         .small {
+            display: none;
+            display: none !important;
+            width: 0px;
+            overflow: hidden;
+            float: left;
+         }
+
+         .ExternalClass * {
+            line-height: 100%;
+         }
+
+         .p-l-r,
+         .p-l-r {
+            padding: 0 15px;
+         }
+
+         .p-l-r-50,
+         .p-l-r-50 {
+            padding: 0 50px;
+         }
+
+         .bg-color {
+            background-color: #ffffff !important;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <span style="display:none !important;
+         visibility:hidden;
+         mso-hide:all;
+         font-size:1px;
+         color:#ffffff;
+         line-height:1px;
+         max-height:0px;
+         max-width:0px;
+         opacity:0;
+         width: 0px;
+         height: 0px;
+         position: absolute;
+         top: -9999px;
+         overflow:hidden;">
+      Enjoy up to 6 free sleeves with your next order
+
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   </span>
+   <table class="flexible-content" width="680" border="0" align="center" cellspacing="0" cellpadding="0">
+      <tr>
+         <td align="center" valign="top" style="background-color: #f7fafc;">
+            <table class="flexible-content" width="100%" border="0" cellspacing="0" cellpadding="0">
+               <tr>
+                  <td align="center" valign="top"><a href="#" target="_blank"><img src="images/banner.jpg" width="680"
+                           height="589" style="display: block;" alt=""></a></td>
+               </tr>
+               <tr>
+                  <td align="center" valign="top" height="60"></td>
+               </tr>
+               <tr>
+                  <td align="center" valign="top">
+                     <table class="flexible-content" width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                           <td align="center" valign="top" width="100" class="hidden"></td>
+                           <td align="center" valign="top" width="480">
+                              <table class="flexible-content" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                 <tr>
+                                    <td align="center" valign="top"
+                                       style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 22px; color: #000; "
+                                       class="p-l-r">Lorem ipsum dolor sit amet, consectetur adipiscing elitis hendrerit
+                                       neque at lacus rutrum, nec suscipit eros tincidunt lorem ipsum dolor sit amet,
+                                       consectetur adipiscing.</td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center" valign="top"
+                                       style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 22px; color: #000; "
+                                       class="p-l-r">Duis euismod neque nterdum et malesuada fames ac ante ipsum primis
+                                       in faucibus que congue placerat felis feugiat vestibulum.</td>
+                                 </tr>
+                              </table>
+                           </td>
+                           <td align="center" valign="top" width="100" class="hidden"></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td align="center" valign="top" height="70"></td>
+               </tr>
+               <tr>
+                  <td align="center" valign="top"
+                     style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; line-height: 38px; color: #11a28f;  font-weight: bold;"
+                     class="p-l-r">The Artists</td>
+               </tr>
+               <tr>
+                  <td align="center" valign="top" height="20"></td>
+               </tr>
+               <tr>
+                  <td align="center" valign="top"><img src="images/divider.jpg" width="66" height="3"
+                        style="display: block;" alt=""></td>
+               </tr>
+               <tr>
+                  <td align="center" valign="top">
+                     <table class="flexible-content" width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                           <td align="center" valign="top" width="30" class="hidden"></td>
+                           <td align="center" valign="top" width="620">
+                              <table class="flexible-content" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                 <tr>
+                                    <td align="center" valign="top">
+                                       <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                          cellpadding="0">
+                                          <tr>
+                                             <td width="230" class="block">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top" height="35"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top"><a href="#" target="_blank"><img
+                                                               src="images/john.jpg" width="213" height="243"
+                                                               style="display: block;" alt=""></a></td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                             <td align="center" valign="top" width="50" class="hidden"></td>
+                                             <td align="left" valign="middle" width="340" class="block">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top" height="25" class="hidden"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top" height="10"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="middle"
+                                                         style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; line-height: 38px; color: #11a28f;"
+                                                         class="p-l-r txt-center">John Doe</td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="middle" height="15"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="middle"
+                                                         style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 22px; color: #000;"
+                                                         class="p-l-r txt-center">Interdum et malesuada fames ac ante
+                                                         ipsum primis in faucibus que congue placerat felis ec suscipit
+                                                         eros tincidunt.</td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top" height="25"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="middle"
+                                                         style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 22px; color: #11a28f;"
+                                                         class="p-l-r txt-center">- MEXICO</td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center" valign="top" style="direction: rtl;">
+                                       <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                          cellpadding="0">
+                                          <tr>
+                                             <td width="230" class="block">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top" height="35"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top"><a href="#" target="_blank"><img
+                                                               src="images/jenny.jpg" width="213" height="243"
+                                                               style="display: block;" alt=""></a></td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                             <td align="center" valign="top" width="50" class="hidden"></td>
+                                             <td align="left" valign="middle" width="340" class="block"
+                                                style="direction: ltr;">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top" height="25" class="hidden"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top" height="10"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="middle"
+                                                         style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; line-height: 38px; color: #5d4bca;"
+                                                         class="p-l-r txt-center">Jenny Doe</td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="middle" height="15"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="middle"
+                                                         style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 22px; color: #000;"
+                                                         class="p-l-r txt-center">Interdum et malesuada fames ac ante
+                                                         ipsum primis in faucibus que congue placerat felis ec suscipit
+                                                         eros tincidunt.</td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top" height="25"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="middle"
+                                                         style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 22px; color: #5d4bca;"
+                                                         class="p-l-r txt-center">- JAPAN</td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center" valign="top">
+                                       <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                          cellpadding="0">
+                                          <tr>
+                                             <td width="230" class="block">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top" height="35"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top"><a href="#" target="_blank"><img
+                                                               src="images/mike.jpg" width="213" height="243"
+                                                               style="display: block;" alt=""></a></td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                             <td align="center" valign="top" width="50" class="hidden"></td>
+                                             <td align="left" valign="middle" width="340" class="block">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top" height="25" class="hidden"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top" height="10"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="middle"
+                                                         style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; line-height: 38px; color: #11a28f;"
+                                                         class="p-l-r txt-center">Mike Doe</td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="middle" height="15"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="middle"
+                                                         style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 22px; color: #000;"
+                                                         class="p-l-r txt-center">Interdum et malesuada fames ac ante
+                                                         ipsum primis in faucibus que congue placerat felis ec suscipit
+                                                         eros tincidunt.</td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top" height="25"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="middle"
+                                                         style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 22px; color: #11a28f;"
+                                                         class="p-l-r txt-center">- HOLLAND</td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center" valign="middle" height="40"></td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center">
+                                       <table width="165" align="center" border="0" cellpadding="0" cellspacing="0">
+                                          <tbody>
+                                             <tr>
+                                                <td width="100%" height="45" align="center" valign="middle"
+                                                   style="  text-align: center; vertical-align: middle; background-color: #11a28f;">
+                                                   <a href="#" target="_blank"
+                                                      style="font-family: Arial, Helvetica, sans-serif; text-decoration: none;  color: #ffffff; font-size: 16px; line-height: 40px;"
+                                                      class="fs13">Meet All Artists</a>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center" valign="middle" height="70"></td>
+                                 </tr>
+                              </table>
+                           </td>
+                           <td align="center" valign="top" width="30" class="hidden"></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td align="center" valign="top"><img src="images/mid-sec.jpg" width="679" height="281"
+                        style="display: block;" alt=""></td>
+               </tr>
+               <tr>
+                  <td align="center" valign="middle" height="70"></td>
+               </tr>
+               <tr>
+                  <td align="center" valign="top"
+                     style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; line-height: 38px; color: #11a28f;  font-weight: bold;"
+                     class="p-l-r">Calendar</td>
+               </tr>
+               <tr>
+                  <td align="center" valign="top" height="20"></td>
+               </tr>
+               <tr>
+                  <td align="center" valign="top"><img src="images/divider.jpg" width="66" height="3"
+                        style="display: block;" alt=""></td>
+               </tr>
+               <tr>
+                  <td align="center" valign="top">
+                     <table class="flexible-content" width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                           <td align="center" valign="top" width="20" class="hidden"></td>
+                           <td align="center" valign="top" width="640">
+                              <table class="flexible-content" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                 <tr>
+                                    <td align="center" valign="top">
+                                       <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                          cellpadding="0">
+                                          <tr>
+                                             <td align="left" valign="top" width="95" class="block">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top" height="45"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="top" height="15" class="hidden"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="top"
+                                                         style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; line-height: 32px; color: #000;"
+                                                         class="p-l-r txt-center">APRIL</td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="top"
+                                                         style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; line-height: 32px; color: #11a28f;"
+                                                         class="p-l-r txt-center">14</td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                             <td align="center" valign="top" width="170" class="block">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top" height="25" class="hidden"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top" height="20"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top"><a href="#" target="_blank"><img
+                                                               src="images/calendar-pic-1.jpg" width="170" height="107"
+                                                               class="" style="display: block;" alt=""></a></td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                             <td align="left" valign="top" width="375" class="block">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top" height="20"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top" height="25" class="hidden"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="top">
+                                                         <table class="flexible-content" width="100%" border="0"
+                                                            cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                               <td align="left" valign="top" width="15" class="hidden">
+                                                               </td>
+                                                               <td align="left" valign="top" width="345">
+                                                                  <table class="flexible-content" width="100%"
+                                                                     border="0" cellspacing="0" cellpadding="0">
+                                                                     <tr>
+                                                                        <td align="left" valign="top"
+                                                                           style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 28px; color: #11a28f;"
+                                                                           class="p-l-r txt-center">Lorem Event</td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td align="left" valign="top" height="10"></td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td align="left" valign="top"
+                                                                           style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 22px; color: #000;"
+                                                                           class="p-l-r txt-center">Lorem ipsum dolor
+                                                                           sit amet, consectetur adipiscing elitis
+                                                                           hendrerit neque at lacus rutrum, consectetur
+                                                                           adipiscing nec suscipit eros tincidunt.</td>
+                                                                     </tr>
+                                                                  </table>
+                                                               </td>
+                                                               <td align="left" valign="top" width="15" class="hidden">
+                                                               </td>
+                                                            </tr>
+                                                         </table>
+                                                      </td>
+                                                   </tr>
+
+                                                </table>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center" valign="top">
+                                       <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                          cellpadding="0">
+                                          <tr>
+                                             <td align="left" valign="top" width="95" class="block">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top" height="45"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="top" height="15" class="hidden"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="top"
+                                                         style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; line-height: 32px; color: #000;"
+                                                         class="p-l-r txt-center">APRIL</td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="top"
+                                                         style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; line-height: 32px; color: #11a28f;"
+                                                         class="p-l-r txt-center">15</td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                             <td align="center" valign="top" width="170" class="block">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top" height="25" class="hidden"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top" height="20"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top"><a href="#" target="_blank"><img
+                                                               src="images/calendar-pic-2.jpg" width="170" height="107"
+                                                               class="" style="display: block;" alt=""></a></td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                             <td align="left" valign="top" width="375" class="block">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top" height="20"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top" height="25" class="hidden"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="top">
+                                                         <table class="flexible-content" width="100%" border="0"
+                                                            cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                               <td align="left" valign="top" width="15" class="hidden">
+                                                               </td>
+                                                               <td align="left" valign="top" width="345">
+                                                                  <table class="flexible-content" width="100%"
+                                                                     border="0" cellspacing="0" cellpadding="0">
+                                                                     <tr>
+                                                                        <td align="left" valign="top"
+                                                                           style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 28px; color: #11a28f;"
+                                                                           class="p-l-r txt-center">Ipsum Event</td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td align="left" valign="top" height="10"></td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td align="left" valign="top"
+                                                                           style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 22px; color: #000;"
+                                                                           class="p-l-r txt-center">Lorem ipsum dolor
+                                                                           sit amet, consectetur adipiscing elitis
+                                                                           hendrerit neque at lacus rutrum, consectetur
+                                                                           adipiscing nec suscipit eros tincidunt.</td>
+                                                                     </tr>
+                                                                  </table>
+                                                               </td>
+                                                               <td align="left" valign="top" width="15" class="hidden">
+                                                               </td>
+                                                            </tr>
+                                                         </table>
+                                                      </td>
+                                                   </tr>
+
+                                                </table>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center" valign="top">
+                                       <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                          cellpadding="0">
+                                          <tr>
+                                             <td align="left" valign="top" width="95" class="block">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top" height="45"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="top" height="15" class="hidden"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="top"
+                                                         style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; line-height: 32px; color: #000;"
+                                                         class="p-l-r txt-center">APRIL</td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="top"
+                                                         style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; line-height: 32px; color: #11a28f;"
+                                                         class="p-l-r txt-center">16</td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                             <td align="center" valign="top" width="170" class="block">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top" height="25" class="hidden"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top" height="20"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top"><a href="#" target="_blank"><img
+                                                               src="images/calendar-pic-3.jpg" width="170" height="107"
+                                                               class="" style="display: block;" alt=""></a></td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                             <td align="left" valign="top" width="375" class="block">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top" height="20"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="center" valign="top" height="25" class="hidden"></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <td align="left" valign="top">
+                                                         <table class="flexible-content" width="100%" border="0"
+                                                            cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                               <td align="left" valign="top" width="15" class="hidden">
+                                                               </td>
+                                                               <td align="left" valign="top" width="345">
+                                                                  <table class="flexible-content" width="100%"
+                                                                     border="0" cellspacing="0" cellpadding="0">
+                                                                     <tr>
+                                                                        <td align="left" valign="top"
+                                                                           style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 28px; color: #11a28f;"
+                                                                           class="p-l-r txt-center">Dolor Event</td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td align="left" valign="top" height="10"></td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td align="left" valign="top"
+                                                                           style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 22px; color: #000;"
+                                                                           class="p-l-r txt-center">Lorem ipsum dolor
+                                                                           sit amet, consectetur adipiscing elitis
+                                                                           hendrerit neque at lacus rutrum, consectetur
+                                                                           adipiscing nec suscipit eros tincidunt.</td>
+                                                                     </tr>
+                                                                  </table>
+                                                               </td>
+                                                               <td align="left" valign="top" width="15" class="hidden">
+                                                               </td>
+                                                            </tr>
+                                                         </table>
+                                                      </td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td height="40"></td>
+                                 </tr>
+                                 <tr>
+                                    <td height="55" class="hidden"></td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center">
+                                       <table width="220" align="center" border="0" cellpadding="0" cellspacing="0">
+                                          <tbody>
+                                             <tr>
+                                                <td width="100%" height="45" align="center" valign="middle"
+                                                   style="  text-align: center; vertical-align: middle; background-color: #11a28f;">
+                                                   <a href="#" target="_blank"
+                                                      style="font-family: Arial, Helvetica, sans-serif; text-decoration: none;  color: #ffffff; font-size: 16px; line-height: 40px;"
+                                                      class="fs13">Register Now</a>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td height="40"></td>
+                                 </tr>
+
+                              </table>
+                           </td>
+                           <td align="center" valign="top" width="20" class="hidden"></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td align="center" valign="top" style="background-color: #4a60bc;">
+                     <table class="flexible-content" width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                           <td align="center" valign="top" height="35"></td>
+                        </tr>
+                        <tr>
+                           <td align="center" valign="top"
+                              style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 28px; color: #fff;"
+                              class="p-l-r"> YOURLOGO</td>
+                        </tr>
+                        <tr>
+                           <td align="center" valign="top" height="10"></td>
+                        </tr>
+                        <tr>
+                           <td align="center" valign="top">
+                              <table class="flexible-content" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                 <tr>
+                                    <td align="center" valign="top" width="280" class="hidden"></td>
+                                    <td align="center" valign="top" width="120" class="block-txt">
+                                       <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                          cellpadding="0">
+                                          <tr>
+                                             <td align="center" valign="top" width="32">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top"><a href="#" target="_blank"><img
+                                                               src="images/facebook2x.png" width="32" height="32"
+                                                               style="display: block;" alt=""></a></td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                             <td align="center" valign="top" width="12"></td>
+                                             <td align="center" valign="top" width="32">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top"><a href="#" target="_blank"><img
+                                                               src="images/twitter2x.png" width="32" height="32"
+                                                               style="display: block;" alt=""></a></td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                             <td align="center" valign="top" width="12"></td>
+                                             <td align="center" valign="top" width="32">
+                                                <table class="flexible-content" width="100%" border="0" cellspacing="0"
+                                                   cellpadding="0">
+                                                   <tr>
+                                                      <td align="center" valign="top"><a href="#" target="_blank"><img
+                                                               src="images/instagram2x.png" width="32" height="32"
+                                                               style="display: block;" alt=""></a></td>
+                                                   </tr>
+                                                </table>
+                                             </td>
+                                          </tr>
+                                       </table>
+                                    </td>
+                                    <td align="center" valign="top" width="280" class="hidden"></td>
+                                 </tr>
+                              </table>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td align="center" valign="top" height="10"></td>
+                        </tr>
+                        <tr>
+                           <td align="center" valign="top"
+                              style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px; color: #fff;"
+                              class="p-l-r">Your Street 12, 34567 AB City / info@example.com / (+1) 123 456 789</td>
+                        </tr>
+                        <tr>
+                           <td align="center" valign="top" height="10"></td>
+                        </tr>
+                        <tr>
+                           <td align="center" valign="top"
+                              style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 20px; color: #fff;"
+                              class="p-l-r"><a href="#" target="_blank"
+                                 style="text-decoration: none; color: #fff;">Unsubscribe</a> &nbsp; | &nbsp; <a href="#"
+                                 target="_blank" style="text-decoration: none; color: #fff;">Manage Preferences</a></td>
+                        </tr>
+                        <tr>
+                           <td align="center" valign="top" height="50"></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td align="center" valign="top" height="30"></td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+   </table>
+</body>
+
+</html>
